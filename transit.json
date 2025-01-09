@@ -1,0 +1,1194 @@
+[
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/104",
+      "@type": [
+        "o:Item",
+        "pro:CulturalAsset"
+      ],
+      "o:id": 104,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/106",
+        "o:id": 106
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/6",
+        "o:id": 6
+      },
+      "o:thumbnail": null,
+      "o:title": "Ferdinand Hodler, Apfelbaum",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T14:53:37+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T14:57:56+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Ferdinand Hodler, Apfelbaum"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/105",
+      "@type": [
+        "o:Item",
+        "pro:CulturalAsset"
+      ],
+      "o:id": 105,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/106",
+        "o:id": 106
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/6",
+        "o:id": 6
+      },
+      "o:thumbnail": null,
+      "o:title": "Ferdinand Hodler, Landschaft mit Pappeln bei Madrid",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T14:53:37+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T14:57:56+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Ferdinand Hodler, Landschaft mit Pappeln bei Madrid"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/106",
+      "@type": [
+        "o:Item",
+        "pro:CulturalAsset"
+      ],
+      "o:id": 106,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/106",
+        "o:id": 106
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/6",
+        "o:id": 6
+      },
+      "o:thumbnail": null,
+      "o:title": "Walter Leistikow, An der Havel",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T14:53:37+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T14:57:56+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Walter Leistikow, An der Havel"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/107",
+      "@type": [
+        "o:Item",
+        "pro:CulturalAsset"
+      ],
+      "o:id": 107,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/106",
+        "o:id": 106
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/6",
+        "o:id": 6
+      },
+      "o:thumbnail": null,
+      "o:title": "Walter Leistikow, Grunewaldsee",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T14:53:37+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T14:57:56+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Walter Leistikow, Grunewaldsee"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/109",
+      "@type": [
+        "o:Item",
+        "pro:CulturalAsset"
+      ],
+      "o:id": 109,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/106",
+        "o:id": 106
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/6",
+        "o:id": 6
+      },
+      "o:thumbnail": null,
+      "o:title": "Ludwig von Hofmann, Supraporte I",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T14:53:37+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T14:57:56+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Ludwig von Hofmann, Supraporte I"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/110",
+      "@type": [
+        "o:Item",
+        "pro:CulturalAsset"
+      ],
+      "o:id": 110,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/106",
+        "o:id": 106
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/6",
+        "o:id": 6
+      },
+      "o:thumbnail": null,
+      "o:title": "Ludwig von Hofmann, Supraporte II",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T14:53:37+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T14:57:56+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Ludwig von Hofmann, Supraporte II"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/111",
+      "@type": [
+        "o:Item",
+        "pro:CulturalAsset"
+      ],
+      "o:id": 111,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/106",
+        "o:id": 106
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/6",
+        "o:id": 6
+      },
+      "o:thumbnail": null,
+      "o:title": "Ludwig von Hofmann, Arkadien-Wandfries I",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T14:53:37+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T14:57:56+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Ludwig von Hofmann, Arkadien-Wandfries I"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/112",
+      "@type": [
+        "o:Item",
+        "pro:CulturalAsset"
+      ],
+      "o:id": 112,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/106",
+        "o:id": 106
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/6",
+        "o:id": 6
+      },
+      "o:thumbnail": null,
+      "o:title": "Ludwig von Hofmann, Arkadien-Wandfries II",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T14:53:37+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T14:57:56+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Ludwig von Hofmann, Arkadien-Wandfries II"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/113",
+      "@type": [
+        "o:Item",
+        "pro:CulturalAsset"
+      ],
+      "o:id": 113,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/106",
+        "o:id": 106
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/6",
+        "o:id": 6
+      },
+      "o:thumbnail": null,
+      "o:title": "Ludwig von Hofmann, An der Havel",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T14:53:37+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T14:57:56+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Ludwig von Hofmann, An der Havel"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/114",
+      "@type": [
+        "o:Item",
+        "pro:CulturalAsset"
+      ],
+      "o:id": 114,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/106",
+        "o:id": 106
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/6",
+        "o:id": 6
+      },
+      "o:thumbnail": null,
+      "o:title": "Max Liebermann, Adolf Sultan",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T14:53:37+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T14:57:56+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Max Liebermann, Adolf Sultan"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/115",
+      "@type": [
+        "o:Item",
+        "pro:CulturalAsset"
+      ],
+      "o:id": 115,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/106",
+        "o:id": 106
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/6",
+        "o:id": 6
+      },
+      "o:thumbnail": null,
+      "o:title": "Max Liebermann, Dorfstraße",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T14:53:37+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T14:57:56+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Max Liebermann, Dorfstraße"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/116",
+      "@type": [
+        "o:Item",
+        "pro:CulturalAsset"
+      ],
+      "o:id": 116,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/106",
+        "o:id": 106
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/6",
+        "o:id": 6
+      },
+      "o:thumbnail": null,
+      "o:title": "Ludwig von Hofmann, Mänade",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T14:57:56+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T14:57:56+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Ludwig von Hofmann, Mänade"
+        }
+      ],
+      "@reverse": {
+        "pro:relatesToCulturalAsset": [
+          {
+            "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resources/121",
+            "o:title": "Hofmann, Mänade, Kunst für Alle 1899"
+          },
+          {
+            "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resources/122",
+            "o:title": "Hofmann, Mänade, Kunst für Alle 1901"
+          },
+          {
+            "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resources/123",
+            "o:title": "Hofmann, Mänade, Wagner-Wilke 2011"
+          },
+          {
+            "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resources/124",
+            "o:title": "Hofmann, Mänade, Wagner 2005"
+          },
+          {
+            "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resources/125",
+            "o:title": "Hofmann, Mänade, 1894 Ludwig Hofmann"
+          },
+          {
+            "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resources/126",
+            "o:title": "Hofmann, Mänade, 1902 Keller & Reimer"
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/121",
+      "@type": [
+        "o:Item",
+        "pro:ProvenanceInformation"
+      ],
+      "o:id": 121,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/107",
+        "o:id": 107
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/7",
+        "o:id": 7
+      },
+      "o:thumbnail": null,
+      "o:title": "Hofmann, Mänade, Kunst für Alle 1899",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T15:04:45+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T15:04:45+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Hofmann, Mänade, Kunst für Alle 1899"
+        }
+      ],
+      "pro:relatesToCulturalAsset": [
+        {
+          "type": "resource",
+          "property_id": 217,
+          "property_label": "Relates To Cultural Asset",
+          "is_public": true,
+          "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/116",
+          "value_resource_id": 116,
+          "value_resource_name": "items",
+          "url": null,
+          "display_title": "Ludwig von Hofmann, Mänade"
+        }
+      ],
+      "pro:infoSource": [
+        {
+          "type": "literal",
+          "property_id": 214,
+          "property_label": "Source",
+          "is_public": true,
+          "@value": "\"Von Ausstellungen und Sammlungen\", in: Die Kunst für Alle, Jg. 15, H. 3, 01.11.1899, S. 66"
+        }
+      ],
+      "pro:infoSourceDate": [
+        {
+          "type": "literal",
+          "property_id": 219,
+          "property_label": "Source Date",
+          "is_public": true,
+          "@value": "1899"
+        }
+      ],
+      "pro:caTitle": [
+        {
+          "type": "literal",
+          "property_id": 218,
+          "property_label": "Cultural Asset Title",
+          "is_public": true,
+          "@value": "Armida"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/122",
+      "@type": [
+        "o:Item",
+        "pro:ProvenanceInformation"
+      ],
+      "o:id": 122,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/107",
+        "o:id": 107
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/7",
+        "o:id": 7
+      },
+      "o:thumbnail": null,
+      "o:title": "Hofmann, Mänade, Kunst für Alle 1901",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T15:04:45+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T15:04:45+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Hofmann, Mänade, Kunst für Alle 1901"
+        }
+      ],
+      "pro:relatesToCulturalAsset": [
+        {
+          "type": "resource",
+          "property_id": 217,
+          "property_label": "Relates To Cultural Asset",
+          "is_public": true,
+          "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/116",
+          "value_resource_id": 116,
+          "value_resource_name": "items",
+          "url": null,
+          "display_title": "Ludwig von Hofmann, Mänade"
+        }
+      ],
+      "pro:infoSource": [
+        {
+          "type": "literal",
+          "property_id": 214,
+          "property_label": "Source",
+          "is_public": true,
+          "@value": "Die Kunst für Alle, Jg. 16, H. 20, 15.07.1901, Abb. S. 478"
+        }
+      ],
+      "pro:infoSourceDate": [
+        {
+          "type": "literal",
+          "property_id": 219,
+          "property_label": "Source Date",
+          "is_public": true,
+          "@value": "1901"
+        }
+      ],
+      "pro:caLocation": [
+        {
+          "type": "literal",
+          "property_id": 208,
+          "property_label": "Location",
+          "is_public": true,
+          "@value": "Ausstellung der Berliner Secession"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/123",
+      "@type": [
+        "o:Item",
+        "pro:ProvenanceInformation"
+      ],
+      "o:id": 123,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/107",
+        "o:id": 107
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/7",
+        "o:id": 7
+      },
+      "o:thumbnail": null,
+      "o:title": "Hofmann, Mänade, Wagner-Wilke 2011",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T15:04:45+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T15:04:45+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Hofmann, Mänade, Wagner-Wilke 2011"
+        }
+      ],
+      "pro:relatesToCulturalAsset": [
+        {
+          "type": "resource",
+          "property_id": 217,
+          "property_label": "Relates To Cultural Asset",
+          "is_public": true,
+          "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/116",
+          "value_resource_id": 116,
+          "value_resource_name": "items",
+          "url": null,
+          "display_title": "Ludwig von Hofmann, Mänade"
+        }
+      ],
+      "pro:infoSource": [
+        {
+          "type": "literal",
+          "property_id": 214,
+          "property_label": "Source",
+          "is_public": true,
+          "@value": "Wagner-Wilke 2011, Textteil, S. 257f."
+        }
+      ],
+      "pro:infoSourceDate": [
+        {
+          "type": "literal",
+          "property_id": 219,
+          "property_label": "Source Date",
+          "is_public": true,
+          "@value": "2011"
+        }
+      ],
+      "pro:caOwner": [
+        {
+          "type": "literal",
+          "property_id": 209,
+          "property_label": "Owner",
+          "is_public": true,
+          "@value": "Kunstsalon Keller & Reiner, Berlin"
+        }
+      ],
+      "@reverse": {
+        "pro:infoSource": [
+          {
+            "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resources/126",
+            "o:title": "Hofmann, Mänade, 1902 Keller & Reimer"
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/124",
+      "@type": [
+        "o:Item",
+        "pro:ProvenanceInformation"
+      ],
+      "o:id": 124,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/107",
+        "o:id": 107
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/7",
+        "o:id": 7
+      },
+      "o:thumbnail": null,
+      "o:title": "Hofmann, Mänade, Wagner 2005",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-14T15:04:45+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-14T15:04:45+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Hofmann, Mänade, Wagner 2005"
+        }
+      ],
+      "pro:relatesToCulturalAsset": [
+        {
+          "type": "resource",
+          "property_id": 217,
+          "property_label": "Relates To Cultural Asset",
+          "is_public": true,
+          "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/116",
+          "value_resource_id": 116,
+          "value_resource_name": "items",
+          "url": null,
+          "display_title": "Ludwig von Hofmann, Mänade"
+        }
+      ],
+      "pro:infoSource": [
+        {
+          "type": "literal",
+          "property_id": 214,
+          "property_label": "Source",
+          "is_public": true,
+          "@value": "Wagner 2005, S. 417"
+        }
+      ],
+      "pro:infoSourceDate": [
+        {
+          "type": "literal",
+          "property_id": 219,
+          "property_label": "Source Date",
+          "is_public": true,
+          "@value": "2005"
+        }
+      ],
+      "pro:caOwner": [
+        {
+          "type": "literal",
+          "property_id": 209,
+          "property_label": "Owner",
+          "is_public": true,
+          "@value": "Ludwig von Hofmann"
+        }
+      ],
+      "@reverse": {
+        "pro:infoSource": [
+          {
+            "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resources/125",
+            "o:title": "Hofmann, Mänade, 1894 Ludwig Hofmann"
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/125",
+      "@type": [
+        "o:Item",
+        "pro:ProvenanceStationInformation"
+      ],
+      "o:id": 125,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/108",
+        "o:id": 108
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/8",
+        "o:id": 8
+      },
+      "o:thumbnail": null,
+      "o:title": "Hofmann, Mänade, 1894 Ludwig Hofmann",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-15T11:52:28+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-15T11:52:28+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Hofmann, Mänade, 1894 Ludwig Hofmann"
+        }
+      ],
+      "pro:relatesToCulturalAsset": [
+        {
+          "type": "resource:item",
+          "property_id": 217,
+          "property_label": "Relates To Cultural Asset",
+          "is_public": true,
+          "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/116",
+          "value_resource_id": 116,
+          "value_resource_name": "items",
+          "url": null,
+          "display_title": "Ludwig von Hofmann, Mänade"
+        }
+      ],
+      "pro:dateDisplay": [
+        {
+          "type": "literal",
+          "property_id": 202,
+          "property_label": "Date Display",
+          "is_public": true,
+          "@value": "spätestens 1894"
+        }
+      ],
+      "pro:dateLatest": [
+        {
+          "type": "literal",
+          "property_id": 206,
+          "property_label": "Date Latest",
+          "is_public": true,
+          "@value": "1894"
+        }
+      ],
+      "pro:infoSource": [
+        {
+          "type": "resource:item",
+          "property_id": 214,
+          "property_label": "Source",
+          "is_public": true,
+          "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/124",
+          "value_resource_id": 124,
+          "value_resource_name": "items",
+          "url": null,
+          "display_title": "Hofmann, Mänade, Wagner 2005"
+        }
+      ]
+    },
+    {
+      "@context": "https://omeka-s-t1.berlin-university-collections.de/api-context",
+      "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/126",
+      "@type": [
+        "o:Item",
+        "pro:ProvenanceStationInformation"
+      ],
+      "o:id": 126,
+      "o:is_public": true,
+      "o:owner": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/users/2",
+        "o:id": 2
+      },
+      "o:resource_class": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_classes/108",
+        "o:id": 108
+      },
+      "o:resource_template": {
+        "@id": "https://omeka-s-t1.berlin-university-collections.de/api/resource_templates/8",
+        "o:id": 8
+      },
+      "o:thumbnail": null,
+      "o:title": "Hofmann, Mänade, 1902 Keller & Reimer",
+      "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+      },
+      "o:created": {
+        "@value": "2024-12-15T11:54:37+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:modified": {
+        "@value": "2024-12-15T11:54:37+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "o:primary_media": null,
+      "o:media": [],
+      "o:item_set": [],
+      "o:site": [],
+      "dcterms:title": [
+        {
+          "type": "literal",
+          "property_id": 1,
+          "property_label": "Title",
+          "is_public": true,
+          "@value": "Hofmann, Mänade, 1902 Keller & Reimer"
+        }
+      ],
+      "pro:relatesToCulturalAsset": [
+        {
+          "type": "resource:item",
+          "property_id": 217,
+          "property_label": "Relates To Cultural Asset",
+          "is_public": true,
+          "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/116",
+          "value_resource_id": 116,
+          "value_resource_name": "items",
+          "url": null,
+          "display_title": "Ludwig von Hofmann, Mänade"
+        }
+      ],
+      "pro:dateDisplay": [
+        {
+          "type": "literal",
+          "property_id": 202,
+          "property_label": "Date Display",
+          "is_public": true,
+          "@value": "wohl spätestens 1902"
+        }
+      ],
+      "pro:dateLatest": [
+        {
+          "type": "literal",
+          "property_id": 206,
+          "property_label": "Date Latest",
+          "is_public": true,
+          "@value": "1902"
+        }
+      ],
+      "pro:infoSource": [
+        {
+          "type": "resource:item",
+          "property_id": 214,
+          "property_label": "Source",
+          "is_public": true,
+          "@id": "https://omeka-s-t1.berlin-university-collections.de/api/items/123",
+          "value_resource_id": 123,
+          "value_resource_name": "items",
+          "url": null,
+          "display_title": "Hofmann, Mänade, Wagner-Wilke 2011"
+        }
+      ]
+    }
+  ]
