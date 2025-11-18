@@ -87,25 +87,102 @@ const downloadAllData = () => {
           <button @click="downloadAllData" class="download-btn">Download All Data as JSON</button>
         </div>
 
-        <div class="content-element">
-          <h3>Aggregated Items (Cultural Assets + Information Units)</h3>
-          <pre v-if="true">{{ aggregatedItems }}</pre>
+        <!-- Aggregated Items Display -->
+        <div v-for="item in aggregatedItems" :key="item.id" class="cultural-asset-card">
+          <div class="asset-header">
+            <h3>{{ item.label || item.title }}</h3>
+            <span class="asset-id">ID: {{ item.id }}</span>
+          </div>
+          
+          <div class="asset-metadata" v-if="item.metadata">
+            <pre class="metadata-text">{{ item.metadata }}</pre>
+          </div>
+
+          <div v-if="item.informationUnits && item.informationUnits.length > 0" class="information-units">
+            <h4>Information Units ({{ item.informationUnits.length }})</h4>
+            
+            <div v-for="infoUnit in item.informationUnits" :key="infoUnit.id" class="info-unit-card">
+              <div class="info-unit-header">
+                <strong>{{ infoUnit.label || infoUnit.title }}</strong>
+                <span class="info-unit-id">ID: {{ infoUnit.id }}</span>
+              </div>
+
+              <div class="info-unit-details">
+                <div v-if="infoUnit.cited_passage" class="detail-row">
+                  <span class="detail-label">Cited Passage:</span>
+                  <span class="detail-value">{{ infoUnit.cited_passage }}</span>
+                </div>
+
+                <div v-if="infoUnit.reference_date" class="detail-row">
+                  <span class="detail-label">Reference Date:</span>
+                  <span class="detail-value">{{ infoUnit.reference_date }}</span>
+                </div>
+
+                <div v-if="infoUnit.ca_title" class="detail-row">
+                  <span class="detail-label">CA Title:</span>
+                  <span class="detail-value">{{ infoUnit.ca_title }}</span>
+                </div>
+
+                <div v-if="infoUnit.ca_dimensions" class="detail-row">
+                  <span class="detail-label">Dimensions:</span>
+                  <span class="detail-value">{{ infoUnit.ca_dimensions }}</span>
+                </div>
+
+                <div v-if="infoUnit.ca_owner" class="detail-row">
+                  <span class="detail-label">Owner:</span>
+                  <span class="detail-value">{{ infoUnit.ca_owner }}</span>
+                </div>
+
+                <div v-if="infoUnit.ca_previous_owner" class="detail-row">
+                  <span class="detail-label">Previous Owner:</span>
+                  <span class="detail-value">{{ infoUnit.ca_previous_owner }}</span>
+                </div>
+
+                <div v-if="infoUnit.ca_location" class="detail-row">
+                  <span class="detail-label">Location:</span>
+                  <span class="detail-value">{{ infoUnit.ca_location }}</span>
+                </div>
+
+                <div v-if="infoUnit.archival_recerence" class="detail-row">
+                  <span class="detail-label">Archival Reference:</span>
+                  <span class="detail-value archival">{{ infoUnit.archival_recerence }}</span>
+                </div>
+
+                <div v-if="infoUnit.online_resource" class="detail-row">
+                  <span class="detail-label">Online Resource:</span>
+                  <span class="detail-value">{{ infoUnit.online_resource }}</span>
+                </div>
+
+                <div v-if="infoUnit.publication" class="publication-info">
+                  <strong>Publication:</strong>
+                  <div class="publication-text">{{ infoUnit.publication.label }}</div>
+                  <div v-if="infoUnit.publication.bibliographical_reference" class="publication-ref">
+                    {{ infoUnit.publication.bibliographical_reference }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div v-else class="no-info-units">
+            No linked information units found
+          </div>
         </div>
 
-        <div class="content-element">
-          <h3>Information Units</h3>
-          <pre v-if="true">{{ informationUnits }}</pre>
-        </div>
+        <!-- Raw Data Sections (Collapsible) -->
+        <details class="content-element">
+          <summary>Raw Data: Information Units</summary>
+          <pre>{{ informationUnits }}</pre>
+        </details>
 
-        <div class="content-element">
-          <h3>Cultural Assets</h3>
-          <pre v-if="true">{{ culturalAssets }}</pre>
-        </div>
+        <details class="content-element">
+          <summary>Raw Data: Cultural Assets</summary>
+          <pre>{{ culturalAssets }}</pre>
+        </details>
 
-        <div class="content-element">
-          <h3>Publications</h3>
-          <pre v-if="true">{{ publications }}</pre>
-        </div>
+        <details class="content-element">
+          <summary>Raw Data: Publications</summary>
+          <pre>{{ publications }}</pre>
+        </details>
       </div>
     </div>
   </main>
@@ -122,6 +199,7 @@ a {
   margin-bottom: 0.75rem;
   background-color: #fff;
   border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .error {
@@ -140,9 +218,19 @@ h2 {
 }
 
 h3 {
-  margin-top: 1rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #34495e;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
 }
 
 pre {
@@ -179,5 +267,161 @@ ul li {
 
 .download-btn:hover {
   background-color: #005a9e;
+}
+
+/* Cultural Asset Card Styles */
+.cultural-asset-card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #0078d4;
+}
+
+.asset-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.asset-id {
+  font-size: 0.875rem;
+  color: #7f8c8d;
+  background-color: #ecf0f1;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.asset-metadata {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.metadata-text {
+  margin: 0;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #2c3e50;
+  background: none;
+  padding: 0;
+  max-height: none;
+}
+
+/* Information Units Styles */
+.information-units {
+  margin-top: 1.5rem;
+}
+
+.info-unit-card {
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e0e0e0;
+}
+
+.info-unit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.info-unit-id {
+  font-size: 0.75rem;
+  color: #95a5a6;
+  background-color: #ecf0f1;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.info-unit-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.detail-value {
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.detail-value.archival {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.publication-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  border: 1px solid #d0d0d0;
+}
+
+.publication-text {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.publication-ref {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #555;
+  font-style: italic;
+}
+
+.no-info-units {
+  padding: 1rem;
+  text-align: center;
+  color: #95a5a6;
+  font-style: italic;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+}
+
+/* Collapsible Details Styles */
+details {
+  cursor: pointer;
+}
+
+details summary {
+  font-weight: 600;
+  padding: 0.5rem;
+  background-color: #f0f0f0;
+  border-radius: 0.25rem;
+  user-select: none;
+}
+
+details summary:hover {
+  background-color: #e0e0e0;
+}
+
+details[open] summary {
+  margin-bottom: 1rem;
 }
 </style>
