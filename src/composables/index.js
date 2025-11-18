@@ -4,6 +4,7 @@
  */
 
 export { useOmekaData } from './useOmekaData';
+export { useCmsData } from './useCmsData';
 export { useProvenance } from './useProvenance';
 export { useItemFilters } from './useItemFilters';
 export { useSearch } from './useSearch';
