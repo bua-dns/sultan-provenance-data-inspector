@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from 'vue';
 import { useCmsData } from '@/composables/useCmsData';
+import { fieldLabels, getFieldLabel } from '@/config/fields.config';
 
 // Initialize CMS data composable
 const { 
@@ -73,25 +74,25 @@ const downloadAllData = () => {
     </div>
 
     <div class="display">
-      <div v-if="loading" class="content-element">Loading data from CMS...</div>
+      <div v-if="loading" class="content-element">{{ fieldLabels.ui.loading }}</div>
       <div v-else-if="error" class="content-element error">{{ error }}</div>
       <div v-else>
         <div class="content-element">
-          <h3>Data Summary</h3>
+          <h3>{{ fieldLabels.sections.dataSummary }}</h3>
           <ul>
-            <li><strong>Information Units:</strong> {{ informationUnits.length }} items</li>
-            <li><strong>Cultural Assets:</strong> {{ culturalAssets.length }} items</li>
-            <li><strong>Publications:</strong> {{ publications.length }} items</li>
-            <li><strong>Aggregated Items:</strong> {{ aggregatedItems.length }} items</li>
+            <li><strong>{{ fieldLabels.sections.informationUnits }}:</strong> {{ informationUnits.length }} {{ fieldLabels.ui.itemsCount }}</li>
+            <li><strong>{{ fieldLabels.sections.culturalAssets }}:</strong> {{ culturalAssets.length }} {{ fieldLabels.ui.itemsCount }}</li>
+            <li><strong>{{ fieldLabels.sections.publications }}:</strong> {{ publications.length }} {{ fieldLabels.ui.itemsCount }}</li>
+            <li><strong>{{ fieldLabels.sections.aggregatedItems }}:</strong> {{ aggregatedItems.length }} {{ fieldLabels.ui.itemsCount }}</li>
           </ul>
-          <button @click="downloadAllData" class="download-btn">Download All Data as JSON</button>
+          <button @click="downloadAllData" class="download-btn">{{ fieldLabels.ui.downloadButton }}</button>
         </div>
 
         <!-- Aggregated Items Display -->
         <div v-for="item in aggregatedItems" :key="item.id" class="cultural-asset-card">
           <div class="asset-header">
             <h3>{{ item.label || item.title }}</h3>
-            <span class="asset-id">ID: {{ item.id }}</span>
+            <span class="asset-id">{{ fieldLabels.culturalAsset.id }}: {{ item.id }}</span>
           </div>
           
           <div class="asset-metadata" v-if="item.metadata">
@@ -99,62 +100,62 @@ const downloadAllData = () => {
           </div>
 
           <div v-if="item.informationUnits && item.informationUnits.length > 0" class="information-units">
-            <h4>Information Units ({{ item.informationUnits.length }})</h4>
+            <h4>{{ fieldLabels.sections.informationUnits }} ({{ item.informationUnits.length }})</h4>
             
             <div v-for="infoUnit in item.informationUnits" :key="infoUnit.id" class="info-unit-card">
               <div class="info-unit-header">
                 <strong>{{ infoUnit.label || infoUnit.title }}</strong>
-                <span class="info-unit-id">ID: {{ infoUnit.id }}</span>
+                <span class="info-unit-id">{{ fieldLabels.informationUnit.id }}: {{ infoUnit.id }}</span>
               </div>
 
               <div class="info-unit-details">
                 <div v-if="infoUnit.cited_passage" class="detail-row">
-                  <span class="detail-label">Cited Passage:</span>
+                  <span class="detail-label">{{ fieldLabels.informationUnit.cited_passage }}:</span>
                   <span class="detail-value">{{ infoUnit.cited_passage }}</span>
                 </div>
 
                 <div v-if="infoUnit.reference_date" class="detail-row">
-                  <span class="detail-label">Reference Date:</span>
+                  <span class="detail-label">{{ fieldLabels.informationUnit.reference_date }}:</span>
                   <span class="detail-value">{{ infoUnit.reference_date }}</span>
                 </div>
 
                 <div v-if="infoUnit.ca_title" class="detail-row">
-                  <span class="detail-label">CA Title:</span>
+                  <span class="detail-label">{{ fieldLabels.informationUnit.ca_title }}:</span>
                   <span class="detail-value">{{ infoUnit.ca_title }}</span>
                 </div>
 
                 <div v-if="infoUnit.ca_dimensions" class="detail-row">
-                  <span class="detail-label">Dimensions:</span>
+                  <span class="detail-label">{{ fieldLabels.informationUnit.ca_dimensions }}:</span>
                   <span class="detail-value">{{ infoUnit.ca_dimensions }}</span>
                 </div>
 
                 <div v-if="infoUnit.ca_owner" class="detail-row">
-                  <span class="detail-label">Owner:</span>
+                  <span class="detail-label">{{ fieldLabels.informationUnit.ca_owner }}:</span>
                   <span class="detail-value">{{ infoUnit.ca_owner }}</span>
                 </div>
 
                 <div v-if="infoUnit.ca_previous_owner" class="detail-row">
-                  <span class="detail-label">Previous Owner:</span>
+                  <span class="detail-label">{{ fieldLabels.informationUnit.ca_previous_owner }}:</span>
                   <span class="detail-value">{{ infoUnit.ca_previous_owner }}</span>
                 </div>
 
                 <div v-if="infoUnit.ca_location" class="detail-row">
-                  <span class="detail-label">Location:</span>
+                  <span class="detail-label">{{ fieldLabels.informationUnit.ca_location }}:</span>
                   <span class="detail-value">{{ infoUnit.ca_location }}</span>
                 </div>
 
                 <div v-if="infoUnit.archival_recerence" class="detail-row">
-                  <span class="detail-label">Archival Reference:</span>
+                  <span class="detail-label">{{ fieldLabels.informationUnit.archival_recerence }}:</span>
                   <span class="detail-value archival">{{ infoUnit.archival_recerence }}</span>
                 </div>
 
                 <div v-if="infoUnit.online_resource" class="detail-row">
-                  <span class="detail-label">Online Resource:</span>
+                  <span class="detail-label">{{ fieldLabels.informationUnit.online_resource }}:</span>
                   <span class="detail-value">{{ infoUnit.online_resource }}</span>
                 </div>
 
                 <div v-if="infoUnit.publication" class="publication-info">
-                  <strong>Publication:</strong>
+                  <strong>{{ fieldLabels.sections.publicationInfo }}:</strong>
                   <div class="publication-text">{{ infoUnit.publication.label }}</div>
                   <div v-if="infoUnit.publication.bibliographical_reference" class="publication-ref">
                     {{ infoUnit.publication.bibliographical_reference }}
@@ -164,23 +165,23 @@ const downloadAllData = () => {
             </div>
           </div>
           <div v-else class="no-info-units">
-            No linked information units found
+            {{ fieldLabels.sections.noInfoUnits }}
           </div>
         </div>
 
         <!-- Raw Data Sections (Collapsible) -->
         <details class="content-element">
-          <summary>Raw Data: Information Units</summary>
+          <summary>{{ fieldLabels.sections.rawData }}: {{ fieldLabels.sections.informationUnits }}</summary>
           <pre>{{ informationUnits }}</pre>
         </details>
 
         <details class="content-element">
-          <summary>Raw Data: Cultural Assets</summary>
+          <summary>{{ fieldLabels.sections.rawData }}: {{ fieldLabels.sections.culturalAssets }}</summary>
           <pre>{{ culturalAssets }}</pre>
         </details>
 
         <details class="content-element">
-          <summary>Raw Data: Publications</summary>
+          <summary>{{ fieldLabels.sections.rawData }}: {{ fieldLabels.sections.publications }}</summary>
           <pre>{{ publications }}</pre>
         </details>
       </div>
