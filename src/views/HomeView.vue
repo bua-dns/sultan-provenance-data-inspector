@@ -126,42 +126,6 @@ const downloadAllData = () => {
             <pre class="metadata-text">{{ item.metadata }}</pre>
           </div>
 
-          <!-- Main Representation -->
-          <div v-if="item.main_representation" class="main-representation">
-            <h4>{{ fieldLabels.culturalAsset.main_representation }}</h4>
-            <div class="representation-card main">
-              <div class="representation-header">
-                <strong>{{ item.main_representation.label || item.main_representation.title }}</strong>
-                <span class="representation-id">{{ fieldLabels.representation.id }}: {{ item.main_representation.id }}</span>
-              </div>
-              <div class="representation-details">
-                <div v-if="item.main_representation.image_url" class="representation-image">
-                  <img :src="getImageUrl(item.main_representation.image_url)" :alt="item.main_representation.label || item.main_representation.title" />
-                </div>
-                <div v-if="item.main_representation.cited_passage" class="detail-row">
-                  <span class="detail-label">{{ fieldLabels.representation.cited_passage }}:</span>
-                  <span class="detail-value">{{ item.main_representation.cited_passage }}</span>
-                </div>
-                <div v-if="item.main_representation.source_date" class="detail-row">
-                  <span class="detail-label">{{ fieldLabels.representation.source_date }}:</span>
-                  <span class="detail-value">{{ item.main_representation.source_date }}</span>
-                </div>
-                <div v-if="item.main_representation.caption" class="detail-row">
-                  <span class="detail-label">{{ fieldLabels.representation.caption }}:</span>
-                  <span class="detail-value">{{ item.main_representation.caption }}</span>
-                </div>
-                <div v-if="item.main_representation.copyright_status" class="detail-row">
-                  <span class="detail-label">{{ fieldLabels.representation.copyright_status }}:</span>
-                  <span class="detail-value">{{ item.main_representation.copyright_status }}</span>
-                </div>
-                <div v-if="item.main_representation.archival_recerence" class="detail-row">
-                  <span class="detail-label">{{ fieldLabels.representation.archival_recerence }}:</span>
-                  <span class="detail-value archival">{{ item.main_representation.archival_recerence }}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <!-- Additional Representations -->
           <div v-if="item.representations && item.representations.length > 0" class="representations">
             <h4>{{ fieldLabels.culturalAsset.representations }} ({{ item.representations.length }})</h4>
@@ -249,14 +213,6 @@ const downloadAllData = () => {
                 <div v-if="infoUnit.online_resource" class="detail-row">
                   <span class="detail-label">{{ fieldLabels.informationUnit.online_resource }}:</span>
                   <span class="detail-value">{{ infoUnit.online_resource }}</span>
-                </div>
-
-                <div v-if="infoUnit.publication" class="publication-info">
-                  <strong>{{ fieldLabels.sections.publicationInfo }}:</strong>
-                  <div class="publication-text">{{ infoUnit.publication.label }}</div>
-                  <div v-if="infoUnit.publication.bibliographical_reference" class="publication-ref">
-                    {{ infoUnit.publication.bibliographical_reference }}
-                  </div>
                 </div>
               </div>
             </div>

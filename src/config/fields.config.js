@@ -40,7 +40,7 @@ export const fieldLabels = {
     updatedAt: 'Aktualisiert am',
     publishedAt: 'Veröffentlicht am',
     cited_passage: 'Zitierte Passage',
-    ca_title: 'Titel des Kulturguts',
+    ca_title: 'Werktitel',
     ca_creator: 'Künstler/Schöpfer',
     archival_recerence: 'Archivische Referenz',
     online_resource: 'Online-Ressource',
