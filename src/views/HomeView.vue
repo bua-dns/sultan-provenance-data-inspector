@@ -37,11 +37,18 @@ const aggregatedItems = computed(() => {
       return matches;
     });
 
+    // Sort information units by reference_date
+    const sortedInfoUnits = linkedInfoUnits.sort((a, b) => {
+      const dateA = a.reference_date || '';
+      const dateB = b.reference_date || '';
+      return dateA.localeCompare(dateB);
+    });
+
     // Return aggregated item
     return {
       id: asset.id,
       ...asset,
-      informationUnits: linkedInfoUnits,
+      informationUnits: sortedInfoUnits,
     };
   });
 });
@@ -196,20 +203,18 @@ const downloadAllData = () => {
             
             <div v-for="infoUnit in item.informationUnits" :key="infoUnit.id" class="info-unit-card">
               <div class="info-unit-header">
-                <strong>{{ infoUnit.label || infoUnit.title }}</strong>
+                <strong>
+                  <template v-if="infoUnit.publication && infoUnit.publication.label">
+                    {{ infoUnit.publication.label }}<template v-if="infoUnit.cited_passage">, {{ infoUnit.cited_passage }}</template>
+                  </template>
+                  <template v-else>
+                    {{ infoUnit.label || infoUnit.title }}
+                  </template>
+                </strong>
                 <span class="info-unit-id">{{ fieldLabels.informationUnit.id }}: {{ infoUnit.id }}</span>
               </div>
 
               <div class="info-unit-details">
-                <div v-if="infoUnit.cited_passage" class="detail-row">
-                  <span class="detail-label">{{ fieldLabels.informationUnit.cited_passage }}:</span>
-                  <span class="detail-value">{{ infoUnit.cited_passage }}</span>
-                </div>
-
-                <div v-if="infoUnit.reference_date" class="detail-row">
-                  <span class="detail-label">{{ fieldLabels.informationUnit.reference_date }}:</span>
-                  <span class="detail-value">{{ infoUnit.reference_date }}</span>
-                </div>
 
                 <div v-if="infoUnit.ca_title" class="detail-row">
                   <span class="detail-label">{{ fieldLabels.informationUnit.ca_title }}:</span>
