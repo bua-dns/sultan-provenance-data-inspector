@@ -13,6 +13,7 @@ export const CMS_CONFIG = {
   // Strapi populate parameters for information-units
   populateParams: {
     informationUnits: 'populate[0]=cultural_assets&populate[1]=publication',
+    culturalAssets: 'populate[0]=main_representation&populate[1]=representations',
   },
   // Default pagination settings
   pagination: {

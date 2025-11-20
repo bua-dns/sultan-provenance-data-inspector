@@ -9,6 +9,25 @@ export const fieldLabels = {
     createdAt: 'Erstellt am',
     updatedAt: 'Aktualisiert am',
     publishedAt: 'Veröffentlicht am',
+    main_representation: 'Hauptabbildung',
+    representations: 'Abbildungen',
+  },
+
+  // Representation Fields
+  representation: {
+    id: 'ID',
+    label: 'Label',
+    title: 'Titel',
+    cited_passage: 'Zitierte Passage',
+    archival_recerence: 'Archivische Referenz',
+    source_date: 'Quelldatum',
+    caption: 'Bildunterschrift',
+    copyright_status: 'Urheberrechtsstatus',
+    image_url: 'Bild-URL',
+    documentId: 'Document ID',
+    createdAt: 'Erstellt am',
+    updatedAt: 'Aktualisiert am',
+    publishedAt: 'Veröffentlicht am',
   },
 
   // Information Unit Fields

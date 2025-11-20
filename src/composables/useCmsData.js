@@ -67,7 +67,10 @@ export function useCmsData() {
           CMS_CONFIG.endpoints.informationUnits,
           CMS_CONFIG.populateParams.informationUnits
         ),
-        fetchAllPages(CMS_CONFIG.endpoints.culturalAssets),
+        fetchAllPages(
+          CMS_CONFIG.endpoints.culturalAssets,
+          CMS_CONFIG.populateParams.culturalAssets
+        ),
         fetchAllPages(CMS_CONFIG.endpoints.publications),
       ]);
 

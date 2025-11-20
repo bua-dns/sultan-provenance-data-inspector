@@ -46,6 +46,15 @@ const aggregatedItems = computed(() => {
   });
 });
 
+// Base URL for representation images
+const IMAGES_BASE_URL = 'https://files.berlin-university-collections.de/sultan/';
+
+// Helper function to compose full image URL
+const getImageUrl = (imageUrl) => {
+  if (!imageUrl) return null;
+  return IMAGES_BASE_URL + imageUrl;
+};
+
 // Download all data as JSON
 const downloadAllData = () => {
   const allData = {
@@ -94,9 +103,92 @@ const downloadAllData = () => {
             <h3>{{ item.label || item.title }}</h3>
             <span class="asset-id">{{ fieldLabels.culturalAsset.id }}: {{ item.id }}</span>
           </div>
+
+          <!-- Main Representation Image -->
+          <div v-if="item.main_representation && item.main_representation.image_url" class="main-image">
+            <img 
+              :src="getImageUrl(item.main_representation.image_url)" 
+              :alt="item.main_representation.label || item.main_representation.title || item.label" 
+            />
+            <div class="image-caption" v-if="item.main_representation.label || item.main_representation.title">
+              {{ item.main_representation.label || item.main_representation.title }}
+            </div>
+          </div>
           
           <div class="asset-metadata" v-if="item.metadata">
             <pre class="metadata-text">{{ item.metadata }}</pre>
+          </div>
+
+          <!-- Main Representation -->
+          <div v-if="item.main_representation" class="main-representation">
+            <h4>{{ fieldLabels.culturalAsset.main_representation }}</h4>
+            <div class="representation-card main">
+              <div class="representation-header">
+                <strong>{{ item.main_representation.label || item.main_representation.title }}</strong>
+                <span class="representation-id">{{ fieldLabels.representation.id }}: {{ item.main_representation.id }}</span>
+              </div>
+              <div class="representation-details">
+                <div v-if="item.main_representation.image_url" class="representation-image">
+                  <img :src="getImageUrl(item.main_representation.image_url)" :alt="item.main_representation.label || item.main_representation.title" />
+                </div>
+                <div v-if="item.main_representation.cited_passage" class="detail-row">
+                  <span class="detail-label">{{ fieldLabels.representation.cited_passage }}:</span>
+                  <span class="detail-value">{{ item.main_representation.cited_passage }}</span>
+                </div>
+                <div v-if="item.main_representation.source_date" class="detail-row">
+                  <span class="detail-label">{{ fieldLabels.representation.source_date }}:</span>
+                  <span class="detail-value">{{ item.main_representation.source_date }}</span>
+                </div>
+                <div v-if="item.main_representation.caption" class="detail-row">
+                  <span class="detail-label">{{ fieldLabels.representation.caption }}:</span>
+                  <span class="detail-value">{{ item.main_representation.caption }}</span>
+                </div>
+                <div v-if="item.main_representation.copyright_status" class="detail-row">
+                  <span class="detail-label">{{ fieldLabels.representation.copyright_status }}:</span>
+                  <span class="detail-value">{{ item.main_representation.copyright_status }}</span>
+                </div>
+                <div v-if="item.main_representation.archival_recerence" class="detail-row">
+                  <span class="detail-label">{{ fieldLabels.representation.archival_recerence }}:</span>
+                  <span class="detail-value archival">{{ item.main_representation.archival_recerence }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Representations -->
+          <div v-if="item.representations && item.representations.length > 0" class="representations">
+            <h4>{{ fieldLabels.culturalAsset.representations }} ({{ item.representations.length }})</h4>
+            <div v-for="rep in item.representations" :key="rep.id" class="representation-card">
+              <div class="representation-header">
+                <strong>{{ rep.label || rep.title }}</strong>
+                <span class="representation-id">{{ fieldLabels.representation.id }}: {{ rep.id }}</span>
+              </div>
+              <div class="representation-details">
+                <div v-if="rep.image_url" class="representation-image">
+                  <img :src="getImageUrl(rep.image_url)" :alt="rep.label || rep.title" />
+                </div>
+                <div v-if="rep.cited_passage" class="detail-row">
+                  <span class="detail-label">{{ fieldLabels.representation.cited_passage }}:</span>
+                  <span class="detail-value">{{ rep.cited_passage }}</span>
+                </div>
+                <div v-if="rep.source_date" class="detail-row">
+                  <span class="detail-label">{{ fieldLabels.representation.source_date }}:</span>
+                  <span class="detail-value">{{ rep.source_date }}</span>
+                </div>
+                <div v-if="rep.caption" class="detail-row">
+                  <span class="detail-label">{{ fieldLabels.representation.caption }}:</span>
+                  <span class="detail-value">{{ rep.caption }}</span>
+                </div>
+                <div v-if="rep.copyright_status" class="detail-row">
+                  <span class="detail-label">{{ fieldLabels.representation.copyright_status }}:</span>
+                  <span class="detail-value">{{ rep.copyright_status }}</span>
+                </div>
+                <div v-if="rep.archival_recerence" class="detail-row">
+                  <span class="detail-label">{{ fieldLabels.representation.archival_recerence }}:</span>
+                  <span class="detail-value archival">{{ rep.archival_recerence }}</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div v-if="item.informationUnits && item.informationUnits.length > 0" class="information-units">
@@ -297,6 +389,34 @@ ul li {
   border-radius: 0.25rem;
 }
 
+/* Main Image Styles */
+.main-image {
+  margin: 1.5rem 0;
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e0e0e0;
+}
+
+.main-image img {
+  max-width: 100%;
+  max-height: 600px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+}
+
+.image-caption {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+  text-align: center;
+}
+
 .asset-metadata {
   background-color: #f8f9fa;
   padding: 1rem;
@@ -313,6 +433,61 @@ ul li {
   background: none;
   padding: 0;
   max-height: none;
+}
+
+/* Representations Styles */
+.main-representation,
+.representations {
+  margin-top: 1.5rem;
+}
+
+.representation-card {
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e0e0e0;
+}
+
+.representation-card.main {
+  background-color: #e8f4fd;
+  border: 2px solid #0078d4;
+}
+
+.representation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.representation-id {
+  font-size: 0.75rem;
+  color: #95a5a6;
+  background-color: #ecf0f1;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.representation-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.representation-image {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.representation-image img {
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Information Units Styles */
